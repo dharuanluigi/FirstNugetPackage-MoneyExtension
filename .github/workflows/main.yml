@@ -40,4 +40,4 @@ jobs:
         run: dotnet pack -c Release
         
       - name: Push pack to nuget.org
-        run: dotnet nuget push "/MoneyExtension/bin/Release/*.nupkg" --api-key ${{ secrets.APIKEY_NUGET }} --source https://api.nuget.org/v3/index.json
+        run: dotnet nuget push "MoneyExtension/bin/Release/*.nupkg" --api-key ${{ secrets.APIKEY_NUGET }} --source https://api.nuget.org/v3/index.json
